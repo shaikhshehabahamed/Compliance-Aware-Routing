@@ -1,0 +1,68 @@
+{
+  "cleaning_report": {
+    "rule": "drop route if any stop has (Latest-Earliest)>2880min or Arrived Time>2880min",
+    "n_routes_before": 20218,
+    "n_routes_dropped": 392,
+    "pct_routes_dropped": 1.939,
+    "n_rows_dropped": 2605
+  },
+  "n_rows_raw": 246626,
+  "n_routes": 19826,
+  "n_drivers": 399,
+  "n_addresses": 10759,
+  "n_weeks": 32,
+  "n_countries": 2,
+  "route_size_mean": 12.43952385756078,
+  "route_size_median": 12.0,
+  "pct_single_loop_routes": 93.37233935236559,
+  "reorder_rate_mean": 0.4966589086308824,
+  "pct_routes_perfect_compliance": 23.776858670432766,
+  "on_time_rate": 0.7804184402747607,
+  "late_rate": 0.10766708198817028,
+  "early_rate": 0.11191447773706907,
+  "split_route_counts": {
+    "train": 11287,
+    "val": 4293,
+    "test": 4246
+  },
+  "week_info": {
+    "train_weeks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "val_weeks": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "test_weeks": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  }
+}
