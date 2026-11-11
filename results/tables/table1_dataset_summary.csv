@@ -1,0 +1,16 @@
+Statistic,Value
+Routes analysed (Route ID x Week ID),19826
+Drivers,399
+Unique delivery addresses,10759
+Weeks of operation,32
+Countries,2
+"Route size, mean (stops)",12.44
+"Route size, median (stops)",12.0
+Single-loop routes (<=2 depot visits),93.4%
+Stop-level reorder rate,49.7%
+Routes driven exactly as planned,23.8%
+Deliveries on time,78.0%
+Deliveries early,11.2%
+Deliveries late,10.8%
+Anomalous routes excluded,392 (1.939%)
+Train / Val / Test routes,11287 / 4293 / 4246

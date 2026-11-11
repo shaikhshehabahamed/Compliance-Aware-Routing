@@ -1,0 +1,10 @@
+{
+  "ga_hyperparameters": {
+    "population_size": 30,
+    "generations": 40
+  },
+  "n_seeds": 5,
+  "exact_seconds_per_route_mean": 0.2078,
+  "ga_seconds_per_route_mean": 0.9531,
+  "ga_slowdown_factor": 4.59
+}

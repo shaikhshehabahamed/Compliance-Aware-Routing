@@ -1,0 +1,136 @@
+{
+  "per_seed_totals": [
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5978704079200025,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.8013330892210667,
+      "recenter_only_rate": 0.7243662329415821,
+      "optimized_rate": 0.8016946614810572,
+      "greedy_rate": 0.8016678783880244,
+      "oracle_rate": 0.9614864715137279,
+      "ga_rate": 0.8016763164186999,
+      "seed": 0,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5975870647438501,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.7995049696320893,
+      "recenter_only_rate": 0.7223967278288699,
+      "optimized_rate": 0.7999013990187581,
+      "greedy_rate": 0.7998709688493753,
+      "oracle_rate": 0.9612870343696678,
+      "ga_rate": 0.799881361133387,
+      "seed": 1,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5988852458310078,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.8003783450457503,
+      "recenter_only_rate": 0.7234106059768474,
+      "optimized_rate": 0.8007721099190797,
+      "greedy_rate": 0.8007480182782768,
+      "oracle_rate": 0.9607330423028342,
+      "ga_rate": 0.8007579662473677,
+      "seed": 2,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5982470357727556,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.8007338834853158,
+      "recenter_only_rate": 0.7238222947855006,
+      "optimized_rate": 0.8011298461001739,
+      "greedy_rate": 0.8011040517762898,
+      "oracle_rate": 0.9604449664280807,
+      "ga_rate": 0.8011149146983199,
+      "seed": 3,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5981449095909528,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.8003736432688001,
+      "recenter_only_rate": 0.7235201005164407,
+      "optimized_rate": 0.8007392627350673,
+      "greedy_rate": 0.8007133540268351,
+      "oracle_rate": 0.9611319165909544,
+      "ga_rate": 0.8007233660018125,
+      "seed": 4,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    }
+  ],
+  "summary_mean": {
+    "n_routes": 4183.0,
+    "n_stops": 45127.0,
+    "status_quo_rate": 0.5981469327717137,
+    "status_quo_real_rate": 0.7805526624858732,
+    "equal_split_rate": 0.8004647861306046,
+    "recenter_only_rate": 0.7235031924098482,
+    "optimized_rate": 0.8008474558508272,
+    "greedy_rate": 0.8008208542637604,
+    "oracle_rate": 0.961016686241053,
+    "ga_rate": 0.8008307848999173,
+    "seed": 2.0,
+    "n_strata": 5.0,
+    "budget_scale": 1.0
+  },
+  "summary_std": {
+    "n_routes": 0.0,
+    "n_stops": 0.0,
+    "status_quo_rate": 0.00048606817418956537,
+    "status_quo_real_rate": 0.0,
+    "equal_split_rate": 0.000663963560078704,
+    "recenter_only_rate": 0.0007210733815234133,
+    "optimized_rate": 0.0006538172378525914,
+    "greedy_rate": 0.0006551325019357065,
+    "oracle_rate": 0.00042260554150397095,
+    "ga_rate": 0.0006545800477933749,
+    "seed": 1.5811388300841898,
+    "n_strata": 0.0,
+    "budget_scale": 0.0
+  },
+  "paired_tests_optimized_vs_baseline": {
+    "status_quo_rate": {
+      "stat": 622.8168952538961,
+      "p": 3.98751422607898e-11,
+      "p_holm": 1.595005690431592e-10
+    },
+    "equal_split_rate": {
+      "stat": 48.896823426769984,
+      "p": 1.0466914338649627e-06,
+      "p_holm": 3.1400743015948882e-06
+    },
+    "recenter_only_rate": {
+      "stat": 1662.70779276091,
+      "p": 7.850303985593529e-13,
+      "p_holm": 3.925151992796765e-12
+    },
+    "greedy_rate": {
+      "stat": 25.293255759146408,
+      "p": 1.4508420509614555e-05,
+      "p_holm": 2.901684101922911e-05
+    },
+    "ga_rate": {
+      "stat": 15.170625522544066,
+      "p": 0.00011006791291961381,
+      "p_holm": 0.00011006791291961381
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "n_single_loop_test_routes": 3942,
+  "n_skipped_depot_not_first_in_both_orders": 260,
+  "n_attempted_full_coverage": 73,
+  "n_solved_without_unknown_edges": 73,
+  "pct_of_single_loop_routes_solved": 1.85,
+  "median_replan_vs_planned_pct": -11.068539246578666,
+  "mean_replan_vs_planned_pct": 11.191231986562372,
+  "pct_routes_replan_shorter": 78.08219178082192
+}

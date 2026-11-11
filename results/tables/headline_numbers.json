@@ -1,0 +1,175 @@
+{
+  "dataset": {
+    "Routes analysed (Route ID x Week ID)": 19826,
+    "Drivers": 399,
+    "Unique delivery addresses": 10759,
+    "Weeks of operation": 32,
+    "Countries": 2,
+    "Route size, mean (stops)": 12.44,
+    "Route size, median (stops)": 12.0,
+    "Single-loop routes (<=2 depot visits)": "93.4%",
+    "Stop-level reorder rate": "49.7%",
+    "Routes driven exactly as planned": "23.8%",
+    "Deliveries on time": "78.0%",
+    "Deliveries early": "11.2%",
+    "Deliveries late": "10.8%",
+    "Anomalous routes excluded": "392 (1.939%)",
+    "Train / Val / Test routes": "11287 / 4293 / 4246"
+  },
+  "best_t1_method": "xgboost",
+  "best_t2_method": "xgboost",
+  "optimization_comparison": [
+    {
+      "Strategy": "Status quo (historical window)",
+      "Predicted on-time rate, mean": 59.81,
+      "Predicted on-time rate, std": 0.05,
+      "p-value vs proposed (paired, raw)": 0.0,
+      "p-value vs proposed (Holm-corrected)": 0.0
+    },
+    {
+      "Strategy": "Equal split (recentred)",
+      "Predicted on-time rate, mean": 80.05,
+      "Predicted on-time rate, std": 0.07,
+      "p-value vs proposed (paired, raw)": 1e-06,
+      "p-value vs proposed (Holm-corrected)": 3e-06
+    },
+    {
+      "Strategy": "Recentred, historical widths",
+      "Predicted on-time rate, mean": 72.35,
+      "Predicted on-time rate, std": 0.07,
+      "p-value vs proposed (paired, raw)": 0.0,
+      "p-value vs proposed (Holm-corrected)": 0.0
+    },
+    {
+      "Strategy": "Greedy heuristic (risk-informed, ablation)",
+      "Predicted on-time rate, mean": 80.08,
+      "Predicted on-time rate, std": 0.07,
+      "p-value vs proposed (paired, raw)": 1.5e-05,
+      "p-value vs proposed (Holm-corrected)": 2.9e-05
+    },
+    {
+      "Strategy": "Genetic algorithm (metaheuristic, ablation)",
+      "Predicted on-time rate, mean": 80.08,
+      "Predicted on-time rate, std": 0.07,
+      "p-value vs proposed (paired, raw)": 0.00011,
+      "p-value vs proposed (Holm-corrected)": 0.00011
+    },
+    {
+      "Strategy": "Compliance-aware (proposed)",
+      "Predicted on-time rate, mean": 80.08,
+      "Predicted on-time rate, std": 0.07,
+      "p-value vs proposed (paired, raw)": NaN,
+      "p-value vs proposed (Holm-corrected)": NaN
+    },
+    {
+      "Strategy": "Oracle (hindsight upper bound)",
+      "Predicted on-time rate, mean": 96.1,
+      "Predicted on-time rate, std": 0.04,
+      "p-value vs proposed (paired, raw)": NaN,
+      "p-value vs proposed (Holm-corrected)": NaN
+    }
+  ],
+  "ga_cost_comparison": {
+    "ga_hyperparameters": {
+      "population_size": 30,
+      "generations": 40
+    },
+    "n_seeds": 5,
+    "exact_seconds_per_route_mean": 0.2078,
+    "ga_seconds_per_route_mean": 0.9531,
+    "ga_slowdown_factor": 4.59
+  },
+  "sensitivity_budget_range_pp": 20.7,
+  "resequencing": {
+    "n_single_loop_test_routes": 3942.0,
+    "n_skipped_depot_not_first_in_both_orders": 260.0,
+    "n_attempted_full_coverage": 73.0,
+    "n_solved_without_unknown_edges": 73.0,
+    "pct_of_single_loop_routes_solved": 1.85,
+    "median_replan_vs_planned_pct": -11.068539246578666,
+    "mean_replan_vs_planned_pct": 11.191231986562372,
+    "pct_routes_replan_shorter": 78.08219178082192
+  },
+  "ablation_features": [
+    {
+      "Task": "T1",
+      "Metric": "AUROC",
+      "Variant": "Full feature set",
+      "n_features": 23,
+      "Mean": 0.8206,
+      "Std": 0.0003,
+      "Delta vs. full": "",
+      "Holm-adjusted p vs. full": ""
+    },
+    {
+      "Task": "T1",
+      "Metric": "AUROC",
+      "Variant": "No address-history features",
+      "n_features": 20,
+      "Mean": 0.8106,
+      "Std": 0.0002,
+      "Delta vs. full": -0.01,
+      "Holm-adjusted p vs. full": 0.0059
+    },
+    {
+      "Task": "T1",
+      "Metric": "AUROC",
+      "Variant": "No driver-history features",
+      "n_features": 20,
+      "Mean": 0.8001,
+      "Std": 0.0001,
+      "Delta vs. full": -0.0205,
+      "Holm-adjusted p vs. full": 0.0059
+    },
+    {
+      "Task": "T1",
+      "Metric": "AUROC",
+      "Variant": "No history features (cold start)",
+      "n_features": 17,
+      "Mean": 0.7704,
+      "Std": 0.0002,
+      "Delta vs. full": -0.0501,
+      "Holm-adjusted p vs. full": 0.0059
+    },
+    {
+      "Task": "T2",
+      "Metric": "MAE",
+      "Variant": "Full feature set",
+      "n_features": 21,
+      "Mean": 85.5072,
+      "Std": 0.0741,
+      "Delta vs. full": "",
+      "Holm-adjusted p vs. full": ""
+    },
+    {
+      "Task": "T2",
+      "Metric": "MAE",
+      "Variant": "No address-history features",
+      "n_features": 18,
+      "Mean": 88.0008,
+      "Std": 0.1347,
+      "Delta vs. full": 2.4937,
+      "Holm-adjusted p vs. full": 0.0059
+    },
+    {
+      "Task": "T2",
+      "Metric": "MAE",
+      "Variant": "No driver-history features",
+      "n_features": 18,
+      "Mean": 90.2372,
+      "Std": 0.0904,
+      "Delta vs. full": 4.73,
+      "Holm-adjusted p vs. full": 0.0059
+    },
+    {
+      "Task": "T2",
+      "Metric": "MAE",
+      "Variant": "No history features (cold start)",
+      "n_features": 15,
+      "Mean": 93.6916,
+      "Std": 0.1131,
+      "Delta vs. full": 8.1845,
+      "Holm-adjusted p vs. full": 0.0059
+    }
+  ]
+}

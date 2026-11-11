@@ -1,0 +1,9 @@
+Task,Metric,Variant,n_features,metric_mean,metric_std,delta_vs_full,holm_p_vs_full
+T1,auroc,Full feature set,23,0.8206,0.0003,,
+T1,auroc,No address-history features,20,0.8106,0.0002,-0.01,0.0059
+T1,auroc,No driver-history features,20,0.8001,0.0001,-0.0205,0.0059
+T1,auroc,No history features (cold start),17,0.7704,0.0002,-0.0501,0.0059
+T2,mae,Full feature set,21,85.5072,0.0741,,
+T2,mae,No address-history features,18,88.0008,0.1347,2.4937,0.0059
+T2,mae,No driver-history features,18,90.2372,0.0904,4.73,0.0059
+T2,mae,No history features (cold start),15,93.6916,0.1131,8.1845,0.0059

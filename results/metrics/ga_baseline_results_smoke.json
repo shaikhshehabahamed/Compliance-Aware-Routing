@@ -1,0 +1,53 @@
+{
+  "ga_hyperparameters": {
+    "population_size": 30,
+    "generations": 40
+  },
+  "n_seeds": 1,
+  "limit_routes": 30,
+  "per_seed_totals": [
+    {
+      "n_routes": 27,
+      "n_stops": 279,
+      "optimized_rate": 0.7398064816870475,
+      "greedy_rate": 0.7396771599770855,
+      "ga_rate": 0.7396952300986384,
+      "opt_seconds_per_route": 0.20444086745933251,
+      "ga_seconds_per_route": 1.0486804909176297,
+      "seed": 0,
+      "n_strata": 5
+    }
+  ],
+  "summary_mean": {
+    "n_routes": 27.0,
+    "n_stops": 279.0,
+    "optimized_rate": 0.7398064816870475,
+    "greedy_rate": 0.7396771599770855,
+    "ga_rate": 0.7396952300986384,
+    "opt_seconds_per_route": 0.20444086745933251,
+    "ga_seconds_per_route": 1.0486804909176297,
+    "seed": 0.0,
+    "n_strata": 5.0
+  },
+  "summary_std": {
+    "n_routes": NaN,
+    "n_stops": NaN,
+    "optimized_rate": NaN,
+    "greedy_rate": NaN,
+    "ga_rate": NaN,
+    "opt_seconds_per_route": NaN,
+    "ga_seconds_per_route": NaN,
+    "seed": NaN,
+    "n_strata": NaN
+  },
+  "paired_tests": {
+    "ga_vs_optimized_rate": {
+      "stat": NaN,
+      "p": NaN
+    },
+    "ga_vs_greedy_rate": {
+      "stat": NaN,
+      "p": NaN
+    }
+  }
+}

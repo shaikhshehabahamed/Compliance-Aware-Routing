@@ -1,0 +1,78 @@
+{
+  "per_seed_totals": [
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5798823289876369,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.7890772138698146,
+      "recenter_only_rate": 0.713938535545216,
+      "optimized_rate": 0.7894623282038133,
+      "greedy_rate": 0.7894371993535076,
+      "oracle_rate": 0.9603120083320407,
+      "seed": 0,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "status_quo_rate": 0.5787831405711321,
+      "status_quo_real_rate": 0.7805526624858732,
+      "equal_split_rate": 0.7889330392225149,
+      "recenter_only_rate": 0.7131285385189533,
+      "optimized_rate": 0.7893245807266447,
+      "greedy_rate": 0.7892943681293735,
+      "oracle_rate": 0.9601568905533273,
+      "seed": 1,
+      "n_strata": 5,
+      "budget_scale": 1.0
+    }
+  ],
+  "summary_mean": {
+    "n_routes": 4183.0,
+    "n_stops": 45127.0,
+    "status_quo_rate": 0.5793327347793845,
+    "status_quo_real_rate": 0.7805526624858732,
+    "equal_split_rate": 0.7890051265461647,
+    "recenter_only_rate": 0.7135335370320847,
+    "optimized_rate": 0.789393454465229,
+    "greedy_rate": 0.7893657837414405,
+    "oracle_rate": 0.960234449442684,
+    "seed": 0.5,
+    "n_strata": 5.0,
+    "budget_scale": 1.0
+  },
+  "summary_std": {
+    "n_routes": 0.0,
+    "n_stops": 0.0,
+    "status_quo_rate": 0.0007772435831122499,
+    "status_quo_real_rate": 0.0,
+    "equal_split_rate": 0.00010194687078076497,
+    "recenter_only_rate": 0.000572754390011308,
+    "optimized_rate": 9.740217519729813e-05,
+    "greedy_rate": 0.00010099692715044417,
+    "oracle_rate": 0.00010968483321080688,
+    "seed": 0.7071067811865476,
+    "n_strata": 0.0,
+    "budget_scale": 0.0
+  },
+  "paired_tests_optimized_vs_baseline": {
+    "status_quo_rate": {
+      "stat": 436.970615856835,
+      "p": 0.0014568912368711148
+    },
+    "equal_split_rate": {
+      "stat": 120.83947091785406,
+      "p": 0.005268189570832526
+    },
+    "recenter_only_rate": {
+      "stat": 225.68975326312932,
+      "p": 0.0028207554709926246
+    },
+    "greedy_rate": {
+      "stat": 10.885956353139441,
+      "p": 0.058317161330164284
+    }
+  }
+}

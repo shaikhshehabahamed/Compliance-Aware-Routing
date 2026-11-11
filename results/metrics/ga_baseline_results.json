@@ -1,0 +1,97 @@
+{
+  "ga_hyperparameters": {
+    "population_size": 30,
+    "generations": 40
+  },
+  "n_seeds": 5,
+  "limit_routes": null,
+  "per_seed_totals": [
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "optimized_rate": 0.8016946536457582,
+      "greedy_rate": 0.8016678783880244,
+      "ga_rate": 0.8016763164186999,
+      "opt_seconds_per_route": 0.22494691124436617,
+      "ga_seconds_per_route": 1.0384629495457944,
+      "seed": 0,
+      "n_strata": 5
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "optimized_rate": 0.7999013911774027,
+      "greedy_rate": 0.7998709688493753,
+      "ga_rate": 0.799881361133387,
+      "opt_seconds_per_route": 0.21146466057750274,
+      "ga_seconds_per_route": 0.9585536050078346,
+      "seed": 1,
+      "n_strata": 5
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "optimized_rate": 0.8007721118778601,
+      "greedy_rate": 0.8007480182782768,
+      "ga_rate": 0.8007579662473677,
+      "opt_seconds_per_route": 0.1955967627727555,
+      "ga_seconds_per_route": 0.9049459761077641,
+      "seed": 2,
+      "n_strata": 5
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "optimized_rate": 0.8011298363041945,
+      "greedy_rate": 0.8011040517762897,
+      "ga_rate": 0.8011149146983199,
+      "opt_seconds_per_route": 0.20291279652116972,
+      "ga_seconds_per_route": 0.9199302883316904,
+      "seed": 3,
+      "n_strata": 5
+    },
+    {
+      "n_routes": 4183,
+      "n_stops": 45127,
+      "optimized_rate": 0.8007392628149008,
+      "greedy_rate": 0.8007133540268351,
+      "ga_rate": 0.8007233660018125,
+      "opt_seconds_per_route": 0.20388138371165962,
+      "ga_seconds_per_route": 0.9436477935972494,
+      "seed": 4,
+      "n_strata": 5
+    }
+  ],
+  "summary_mean": {
+    "n_routes": 4183.0,
+    "n_stops": 45127.0,
+    "optimized_rate": 0.8008474511640232,
+    "greedy_rate": 0.8008208542637604,
+    "ga_rate": 0.8008307848999173,
+    "opt_seconds_per_route": 0.2077605029654907,
+    "ga_seconds_per_route": 0.9531081225180665,
+    "seed": 2.0,
+    "n_strata": 5.0
+  },
+  "summary_std": {
+    "n_routes": 0.0,
+    "n_stops": 0.0,
+    "optimized_rate": 0.000653816418740263,
+    "greedy_rate": 0.0006551325019356945,
+    "ga_rate": 0.0006545800477933749,
+    "opt_seconds_per_route": 0.011131013122970228,
+    "ga_seconds_per_route": 0.05202153070584296,
+    "seed": 1.5811388300841898,
+    "n_strata": 0.0
+  },
+  "paired_tests": {
+    "ga_vs_optimized_rate": {
+      "stat": -15.183617396171554,
+      "p": 0.00010969702378577376
+    },
+    "ga_vs_greedy_rate": {
+      "stat": 24.384575066271328,
+      "p": 1.6781734783999224e-05
+    }
+  }
+}
